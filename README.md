@@ -1,2 +1,2 @@
-# Main-Projects-
-Moje Projekty
+# Main-Projects
+Moje Projekty które są wykonywane hobbistycznie 
