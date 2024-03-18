@@ -1,32 +1,51 @@
 /* Resetowanie domyślnych stylów */
-body, ul {
+*{
     margin: 0;
     padding: 0;
 }
-
+/* domyślne style */
+body{
+    font-family: 'Arial', sans-serif;
+    margin-top: 60px;
+}
 /* Styl dla kontenera (np. <header>) */
 header {
     background-color: #333;
-    padding: 20px;
+    padding: 10px;
     display: flex; 
+    width: 100vw;
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    z-index: 1000; 
     justify-content: space-between; 
     align-items: center; 
+    font-size: .7rem;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 /* Styl dla logo */
 .logo {
     display: flex; 
     align-items: center; 
+    
 }
 
 .logo h1 {
     color: #fff; 
+    font-weight: 100;
     margin-right: 10px; 
+    margin-left: 10px;
+    padding-left: 20px;
+    border-left-style: solid;
+    border-left-color: #fff;
 }
 
 .symbol {
-    font-size: 24px; 
-    color: #fff; 
+    width: 50px; 
+    height: auto; 
+    margin-right: 10px;
 }
 
 /* Styl dla nawigacji */
@@ -36,11 +55,11 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 40px;
 }
 
 nav ul li:last-child {
-    margin-right: 0; 
+    margin-right: 100px; 
 }
 
 nav ul li a {
@@ -73,3 +92,42 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+/* Style dla sekcji About */
+#about {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .container h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .container p {
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .container a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .container a:hover {
+    text-decoration: underline;
+  }
+  
